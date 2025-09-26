@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88a6d2020af17044bb929dbf10791382, type: 3}
+  m_Name: AI_Lili
+  m_EditorClassIdentifier: 
+  PersonalityName: AI Lili
+  MissionCancelThreshold: 0.1
+  CommanderCheckRadius: 5
+  CommanderPowerDifferenceError: 10
+  MissionSettings:
+  - MissionType: 1
+    MaxConcurrent: 2
+    TroopRange: {x: 10, y: 20}
+    PreferenceWeight: 0.714
+  - MissionType: 2
+    MaxConcurrent: 2
+    TroopRange: {x: 5, y: 10}
+    PreferenceWeight: 0.344
+  - MissionType: 3
+    MaxConcurrent: 100
+    TroopRange: {x: 0, y: 100}
+    PreferenceWeight: 0.503
+  - MissionType: 4
+    MaxConcurrent: 2
+    TroopRange: {x: 0, y: 10}
+    PreferenceWeight: 0.503
